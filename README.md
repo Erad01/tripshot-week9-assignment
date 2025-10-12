@@ -18,13 +18,9 @@ Every of the stretc goals! At this time I have looked tried as much as possible 
 The stretch goals werent difficult. Its just competence that i would say is the challenge at this time. 
 
 
-Optional
-🏹 Feel free to add any other reflections you would like to share about your submission, for example:
+I must also state that I am struggling with the vercel operations. Everything seams to just break each time I try to fix an aspect. At this time my vercel deployment shows an internal server error. Something about my 'Middleware_Invocation_failed'. And I am at loss at how to fix it.
 
-Requesting feedback about a specific part of your submission.
-What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
-What errors or bugs did you encounter while completing your assignment? How did you solve them?
-What went really well and what could have gone better?
+I have not been able to concentrate on my CSS styling because of the worry on errors. This aspect is something that I am not particularly powerful in. I do have to do alot of revision to get used to the syntax 
 
 
 

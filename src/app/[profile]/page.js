@@ -2,7 +2,7 @@ import {auth} from "@clerk/nextjs/server"
 import {db} from "@/util/db.Connection"
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
-
+import profileStyles from "./profile.module.css";
 
 
 export default async function ProfilePage(){
@@ -54,14 +54,16 @@ export default async function ProfilePage(){
         
         <>
         <h1>Profile Page</h1>
-        <div>
-            {presentUser.first_name} {presentUser.last_name}
-        </div>
-        <div>
-            {presentUser.email}
-        </div>
-        <div>
-            bio: {presentUser.biography}
+        <div className={profileStyles.profile_container}>
+            <div>
+                {presentUser.first_name} {presentUser.last_name}
+            </div>
+            <div>
+                {presentUser.email}
+            </div>
+            <div>
+                bio: {presentUser.biography}
+            </div>
         </div>
 
 
