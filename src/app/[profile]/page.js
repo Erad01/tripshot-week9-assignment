@@ -9,11 +9,19 @@ export default async function ProfilePage(){
 
     const { userId } = await auth()
 
-      const query2 = await db.query(
+    const query2 = await db.query(
                 `SELECT * FROM users WHERE id ='${userId}'`
             )
             
             const presentUser = query2.rows[0]
+
+    const query3 = await db.query(
+        `SELECT id, message, time FROM posts2 WHERE user_id = '${userId}'`,
+        
+    )
+
+    console.log(query3)
+    const userPosts = query3.rows
 
     async function handleSubmit(formData){
         "use server"
@@ -54,6 +62,18 @@ export default async function ProfilePage(){
         </div>
         <div>
             bio: {presentUser.biography}
+        </div>
+
+
+        <div>
+            {userPosts.map((userPost)=>{
+                return(
+                    <div key={userPost.id}>
+                        {userPost.message} 
+                        {new Date (userPost.time).toLocaleString()}
+                    </div>
+                )
+            })}
         </div>
 
         <form action={handleSubmit}>
