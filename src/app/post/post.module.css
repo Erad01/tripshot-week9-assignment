@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.flex1{
+    width: 15%;
+    /* border-right: 2px solid black; */
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+}
+.flex2{
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+
+
+
+}
+.flex3{
+    width: 25%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+
+
+}
+
+.form {
+    background-color: rgb(184, 237, 237);
+    padding: 20px;
+    border-radius: 25px;
+
+
+}
+
+.post_messages{
+    background-color: aliceblue;
+    border-radius: 25px;
+
+}
