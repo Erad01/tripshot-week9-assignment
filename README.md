@@ -24,3 +24,5 @@ I have not been able to concentrate on my CSS styling because of the worry on er
 
 
 
+I have also just realised that in my hoverCard component, I may have put the wrong element in it. I was looking at putting an element that will render when I hover on it. While that was successful it ended up affecting the sign-in and sign-out clerk component of my app. 
+

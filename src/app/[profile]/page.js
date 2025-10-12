@@ -53,7 +53,6 @@ export default async function ProfilePage(){
 
         
         <>
-        <h1>Profile Page</h1>
         <div className={profileStyles.profile_container}>
             <div>
                 {presentUser.first_name} {presentUser.last_name}
